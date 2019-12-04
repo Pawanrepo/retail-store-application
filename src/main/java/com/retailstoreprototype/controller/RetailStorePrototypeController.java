@@ -22,6 +22,7 @@ public class RetailStorePrototypeController
     public ResponseEntity<Amount> netPayable(@RequestBody Customer customer)
     {
        Amount amount = prototypeService.start(customer);
+       System.out.println("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
        return ResponseEntity.ok(amount);
     }
 }
